@@ -35,14 +35,13 @@ public class ChartController {
         model.addAttribute("targetYmList", targetYmList);
         model.addAttribute("priceList", priceList);
 
-//
+
 //        String[] targetYmArray = list.stream().map(ChartResponseDTO::getTargetYm).toArray(String[]::new);
 //        Long[] priceArray = list.stream().map(ChartResponseDTO::getPrice).toArray(Long[]::new);
 //
 //        log.info("list: {}", list);
 //        log.info("targetYmArray: {}", (Object) targetYmArray);
 //        log.info("priceArray: {}", (Object) priceArray);
-//
 //
 //        model.addAttribute("list", list);
 //        model.addAttribute("targetYmArray", targetYmArray);

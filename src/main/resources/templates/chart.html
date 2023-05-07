@@ -65,21 +65,35 @@
                 datasets: [{
                     label: '월별 최종 송금액',
                     data: [[${priceList}]],
-                    // backgroundColor: '#FFB1C1',
+                    backgroundColor: 'rgba(75, 192, 192, 0.5)',
                     borderColor: 'rgba(75, 192, 192)',
-                    borderWidth: 3,
-                    tension: 0.1
+                    borderWidth: 2,
+                    tension: 0.1,
+                    pointRadius: 6,
+                    pointStyle: 'circle',
+                    pointBorderWidth: 1
                 }]
             },
             options: {
+                interaction: {
+                    intersect: false,
+                    mode: 'index'
+                },
                 plugins: {
+                    title: {
+                        display: false
+                    },
                     legend: {
                         labels: {
                             font: {
                                 size: 14
                             }
                         }
+                    },
+                    tooltip: {
+                        usePointStyle: true
                     }
+
                 }
             }
         });
